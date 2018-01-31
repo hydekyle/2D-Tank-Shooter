@@ -78,7 +78,6 @@ public class PlayerControl : MonoBehaviour {
 
     void ApuntarMouse()
     {
-        //ROTAR SPRITE 2D EN DIRECCIÓN AL MOUSE 
         Vector3 touch = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 targetMover = new Vector3(touch.x,transform.position.y,transform.position.z);
         float distance = Vector3.Distance(targetMover, transform.position) * 2;
